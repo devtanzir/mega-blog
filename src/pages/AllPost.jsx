@@ -1,17 +1,20 @@
 import { useState, useEffect } from "react";
-import { Container, PostCard } from "../components";
+import { Container, Loader, PostCard } from "../components";
 import appwriteService from "../appwrite/config";
 
 const AllPost = () => {
   const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {}, []);
 
-  appwriteService.getPosts([]).then((posts) => {
+  appwriteService.getPosts([])
+  .then((posts) => {
     if (posts) {
       setPosts(posts.documents);
     }
-  });
-  return (
+  })
+  .finally(() => setLoading(false));
+  return ! loading ? (
     <div className="py-8 w-full">
       <Container>
         <div className="flex flex-wrap"></div>
@@ -22,7 +25,7 @@ const AllPost = () => {
         ))}
       </Container>
     </div>
-  );
+  ): <Loader/>;
 };
 
 export default AllPost;

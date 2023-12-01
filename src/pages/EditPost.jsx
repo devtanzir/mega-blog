@@ -26,7 +26,7 @@ const EditPost = () => {
         <PostForm post={post} />
       </Container>
     </div>
-  ) : null;
+  ) : <h1 className="text-2xl flex justify-center items-center uppercase bg-[#778ca3] py-10 font-semibold text-white"> no post available</h1>;
 };
 
 export default EditPost;

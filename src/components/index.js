@@ -12,6 +12,7 @@ import PostForm from "./postForm/PostForm.jsx";
 import Signup from "./Signup.jsx";
 import Login from "./Login.jsx";
 import Protected from "./AuthLayout.jsx"; 
+import Loader from "./Loader/Loader.jsx";
 export{
     Header,
     Footer,
@@ -26,5 +27,6 @@ export{
     PostForm,
     Signup,
     Login,
-    Protected
+    Protected,
+    Loader
 }
