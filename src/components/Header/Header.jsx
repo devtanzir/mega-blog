@@ -8,7 +8,12 @@ const Header = () => {
 
   const navItems = [
     {
-      name: "Home",
+      name: "All Posts",
+      slug: "/all-posts",
+      active: authStatus,
+    },
+    {
+      name: "Your Post",
       slug: "/",
       active: true,
     },
@@ -23,23 +28,18 @@ const Header = () => {
       active: !authStatus,
     },
     {
-      name: "All Posts",
-      slug: "/all-posts",
-      active: authStatus,
-    },
-    {
       name: "Add Post",
       slug: "/add-post",
       active: authStatus,
     },
   ];
   return (
-    <header className="py-3 shadow bg-[#dff9fb]">
+    <header className="py-3 shadow bg-[#ffffff]">
       <Container>
         <nav className="flex">
           <div className="mr-4">
             <Link to="/">
-              <Logo />
+              <Logo className="absolute top-[-20px]" />
             </Link>
           </div>
           <ul className="flex ml-auto">
@@ -48,7 +48,7 @@ const Header = () => {
                 <li key={item.name}>
                   <button
                     onClick={() => navigate(item.slug)}
-                    className="inline-bock px-6 py-2 duration-200 hover:bg-[#c7ecee] rounded-md uppercase"
+                    className="inline-bock px-6 py-2 duration-200 hover:bg-[#e6e9e9] rounded-md uppercase font-semibold"
                   >
                     {item.name}
                   </button>

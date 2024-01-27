@@ -5,7 +5,7 @@ import Logo from "../Logo";
 const Footer = () => {
   return (
     <>
-      <section className="relative overflow-hidden py-10 bg-[#2f3542]">
+      <section className="relative overflow-hidden py-10 bg-[#eff0f2]">
         <div className="relative z-10 mx-auto max-w-7xl px-4">
           <div className="-m-6 flex flex-wrap">
             <div className="w-full p-6 md:w-1/2 lg:w-5/12">
@@ -14,8 +14,9 @@ const Footer = () => {
                   <Logo width="100px" />
                 </div>
                 <div>
-                  <p className="text-sm text-white">
-                    &copy; Copyright 2023. All Rights Reserved by DevUI.
+                  <p className="text-sm text-black font-semibold">
+                    &copy; Copyright 2023. All Rights Reserved by Tanzir Ibne
+                    Ali.
                   </p>
                 </div>
               </div>
@@ -23,39 +24,43 @@ const Footer = () => {
             <div className="w-full p-6 md:w-1/2 lg:w-2/12">
               <div className="h-full">
                 <h3 className="tracking-px mb-9  text-xl font-semibold uppercase text-gray-500">
-                  Company
+                  Links
                 </h3>
                 <ul>
                   <li className="mb-4">
                     <Link
-                      className=" text-base font-normal text-white hover:text-gray-500"
-                      to="/"
+                      className=" text-base text-black font-semibold hover:text-gray-500"
+                      to="https://www.facebook.com/tanziribneali.me"
+                      target="_blank"
                     >
-                      Features
+                      Facebook
                     </Link>
                   </li>
                   <li className="mb-4">
                     <Link
-                      className=" text-base font-normal text-white hover:text-gray-500"
-                      to="/"
+                      className=" text-base text-black font-semibold hover:text-gray-500"
+                      to="https://twitter.com/TanzirIbneAli"
+                      target="_blank"
                     >
-                      Pricing
+                      Twitter
                     </Link>
                   </li>
                   <li className="mb-4">
                     <Link
-                      className=" text-base font-normal text-white hover:text-gray-500"
-                      to="/"
+                      className=" text-base text-black font-semibold hover:text-gray-500"
+                      to="https://www.linkedin.com/in/tanziribneali/"
+                      target="_blank"
                     >
-                      Affiliate Program
+                      Linkdin
                     </Link>
                   </li>
                   <li>
                     <Link
-                      className=" text-base font-normal text-white hover:text-gray-500"
-                      to="/"
+                      className=" text-base text-black font-semibold hover:text-gray-500"
+                      to="https://github.com/devtanzir"
+                      target="_blank"
                     >
-                      Press Kit
+                      Github
                     </Link>
                   </li>
                 </ul>
@@ -69,7 +74,7 @@ const Footer = () => {
                 <ul>
                   <li className="mb-4">
                     <Link
-                      className=" text-base font-normal text-white hover:text-gray-500"
+                      className=" text-base text-black font-semibold hover:text-gray-500"
                       to="/"
                     >
                       Account
@@ -77,7 +82,7 @@ const Footer = () => {
                   </li>
                   <li className="mb-4">
                     <Link
-                      className=" text-base font-normal text-white hover:text-gray-500"
+                      className=" text-base text-black font-semibold hover:text-gray-500"
                       to="/"
                     >
                       Help
@@ -85,7 +90,7 @@ const Footer = () => {
                   </li>
                   <li className="mb-4">
                     <Link
-                      className=" text-base font-normal text-white hover:text-gray-500"
+                      className=" text-base text-black font-semibold hover:text-gray-500"
                       to="/"
                     >
                       Contact Us
@@ -93,7 +98,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      className=" text-base font-normal text-white hover:text-gray-500"
+                      className=" text-base text-black font-semibold hover:text-gray-500"
                       to="/"
                     >
                       Customer Support
@@ -110,7 +115,7 @@ const Footer = () => {
                 <ul>
                   <li className="mb-4">
                     <Link
-                      className=" text-base font-normal text-white hover:text-gray-500"
+                      className=" text-base text-black font-semibold hover:text-gray-500"
                       to="/"
                     >
                       Terms &amp; Conditions
@@ -118,7 +123,7 @@ const Footer = () => {
                   </li>
                   <li className="mb-4">
                     <Link
-                      className=" text-base font-normal text-white hover:text-gray-500"
+                      className=" text-base text-black font-semibold hover:text-gray-500"
                       to="/"
                     >
                       Privacy Policy
@@ -126,7 +131,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      className=" text-base font-normal text-white hover:text-gray-500"
+                      className=" text-base text-black font-semibold hover:text-gray-500"
                       to="/"
                     >
                       Licensing
